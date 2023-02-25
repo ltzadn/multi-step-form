@@ -43,29 +43,16 @@ body {
 		.main__sidebar {
 			width: 25%;
 			height: 100%;
-			border-radius: 25px;
+			border-radius: 10px;
 			overflow: hidden;
 
-			.main__sidebar__svg {
+			.main__sidebar--svg {
 				width: 100%;
 				height: 100%;
 				background-size: cover;
 				background-position: center;
 				background-repeat: no-repeat;
 				background-image: url(../multi-step-form-main/assets/images/bg-sidebar-desktop.svg);
-
-				.step--wrapper {
-					width: 100%;
-					height: 50%;
-					display: flex;
-					justify-content: space-between;
-
-					.step--info {
-						font-size: 1.3rem;
-						width: 30%;
-						height: 25%;
-					}
-				}
 			}
 		}
 		.main__input {

@@ -41,27 +41,16 @@ body main .main__module {
 body main .main__sidebar {
   width: 25%;
   height: 100%;
-  border-radius: 25px;
+  border-radius: 10px;
   overflow: hidden;
 }
-body main .main__sidebar .main__sidebar__svg {
+body main .main__sidebar .main__sidebar--svg {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../multi-step-form-main/assets/images/bg-sidebar-desktop.svg);
-}
-body main .main__sidebar .main__sidebar__svg .step--wrapper {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  justify-content: space-between;
-}
-body main .main__sidebar .main__sidebar__svg .step--wrapper .step--info {
-  font-size: 1.3rem;
-  width: 30%;
-  height: 25%;
 }
 body main .main__input {
   width: 70%;
