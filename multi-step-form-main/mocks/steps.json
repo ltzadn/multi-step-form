@@ -1,0 +1,16 @@
+{
+	"data": [
+		{
+			"stepTitle": "your info"
+		},
+		{
+			"stepTitle": "select plan"
+		},
+		{
+			"stepTitle": "add-ons"
+		},
+		{
+			"stepTitle": "summary"
+		}
+	]
+}
