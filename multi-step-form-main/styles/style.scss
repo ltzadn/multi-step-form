@@ -8,6 +8,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
+.hidden {
+	visibility: hidden;
+}
+
 body {
 	background-color: $cream_white;
 	font-family: 'Ubuntu', serif;
@@ -96,45 +100,71 @@ body {
 		.main__input {
 			width: 70%;
 			height: 100%;
-			border: solid 1px #ccc;
 
 			.step-one {
 				width: 100%;
 				height: 100%;
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
 				padding: 1.4rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 
-				h1 {
-					font-size: 2.2rem;
-					color: $dark_blue;
-				}
+				.main__input--wrapper {
+					width: 80%;
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
 
-				.h1__description {
-					font-size: 1rem;
-					color: $light_gray;
-				}
+					h1 {
+						font-size: 2.2rem;
+						font-weight: 600;
+						color: $dark_blue;
+					}
 
-				.input__description {
-					color: $dark_blue;
-					font-size: 1.2rem;
-					height: 4%;
-				}
-				.personal-info {
-					height: 8%;
-					width: 60%;
-					margin-top: -1.6rem;
-					border: solid 1px $light_gray;
-					border-radius: 10px;
-				}
-				.next-step {
-					width: 20%;
-					height: 10%;
-					background-color: $dark_blue;
-					border-radius: 10px;
-					color: $cream_white;
-					margin-left: 18rem;
+					.h1__description {
+						margin-top: -1rem;
+						font-size: 1rem;
+						color: $light_gray;
+					}
+
+					.input__description {
+						color: $dark_blue;
+						font-size: 1.2rem;
+						height: 4%;
+					}
+					.personal-info {
+						height: 8%;
+						width: 100%;
+						margin-top: -1.2rem;
+						border: solid 1px $light_gray;
+						border-radius: 10px;
+					}
+					.personal-info::placeholder {
+						padding-left: 0.7rem;
+					}
+
+					.btn--container {
+						width: 100%;
+						height: 10%;
+						display: flex;
+						justify-content: space-between;
+
+						#go-back {
+							width: 20%;
+							height: 100%;
+							border: none;
+							color: $light_gray;
+						}
+
+						#next-step {
+							width: 20%;
+							height: 100%;
+							background-color: $dark_blue;
+							border-radius: 10px;
+							color: $cream_white;
+						}
+					}
 				}
 			}
 		}

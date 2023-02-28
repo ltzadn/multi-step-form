@@ -33,8 +33,9 @@ window.onload = () => {
 };
 let activeStep = 0;
 
+//
+
 const sidebarStepsActiveStateHandler = event => {
-	// console.log(event);
 	event.target.innerText === 'Next Step'
 		? activeStep < 3
 			? activeStep++

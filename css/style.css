@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 body {
   background-color: #eef5ff;
   font-family: "Ubuntu", serif;
@@ -86,41 +90,66 @@ body main .main__sidebar .main__sidebar--svg .main__sidebar--container .sidebar_
 body main .main__input {
   width: 70%;
   height: 100%;
-  border: solid 1px #ccc;
 }
 body main .main__input .step-one {
   width: 100%;
   height: 100%;
+  padding: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .main__input .step-one .main__input--wrapper {
+  width: 80%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1.4rem;
 }
-body main .main__input .step-one h1 {
+body main .main__input .step-one .main__input--wrapper h1 {
   font-size: 2.2rem;
+  font-weight: 600;
   color: #032355;
 }
-body main .main__input .step-one .h1__description {
+body main .main__input .step-one .main__input--wrapper .h1__description {
+  margin-top: -1rem;
   font-size: 1rem;
   color: #a5a4aa;
 }
-body main .main__input .step-one .input__description {
+body main .main__input .step-one .main__input--wrapper .input__description {
   color: #032355;
   font-size: 1.2rem;
   height: 4%;
 }
-body main .main__input .step-one .personal-info {
+body main .main__input .step-one .main__input--wrapper .personal-info {
   height: 8%;
-  width: 60%;
-  margin-top: -1.6rem;
+  width: 100%;
+  margin-top: -1.2rem;
   border: solid 1px #a5a4aa;
   border-radius: 10px;
 }
-body main .main__input .step-one .next-step {
-  width: 20%;
+body main .main__input .step-one .main__input--wrapper .personal-info::-moz-placeholder {
+  padding-left: 0.7rem;
+}
+body main .main__input .step-one .main__input--wrapper .personal-info::placeholder {
+  padding-left: 0.7rem;
+}
+body main .main__input .step-one .main__input--wrapper .btn--container {
+  width: 100%;
   height: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+body main .main__input .step-one .main__input--wrapper .btn--container #go-back {
+  width: 20%;
+  height: 100%;
+  border: none;
+  color: #a5a4aa;
+}
+body main .main__input .step-one .main__input--wrapper .btn--container #next-step {
+  width: 20%;
+  height: 100%;
   background-color: #032355;
   border-radius: 10px;
   color: #eef5ff;
-  margin-left: 18rem;
 }/*# sourceMappingURL=style.css.map */
