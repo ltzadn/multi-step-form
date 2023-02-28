@@ -88,66 +88,80 @@ body main .main__sidebar .main__sidebar--svg .main__sidebar--container .sidebar_
   color: #a5a4aa;
 }
 body main .main__input {
-  width: 70%;
+  width: 75%;
   height: 100%;
 }
 body main .main__input .step-one {
   width: 100%;
   height: 100%;
-  padding: 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-body main .main__input .step-one .main__input--wrapper {
-  width: 80%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
 }
-body main .main__input .step-one .main__input--wrapper h1 {
-  font-size: 2.2rem;
+body main .main__input .step-one .main__input--wrapper {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+}
+body main .main__input .step-one .main__input--wrapper .title__container {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+}
+body main .main__input .step-one .main__input--wrapper .title__container h1 {
+  width: 100%;
+  font-size: 2rem;
   font-weight: 600;
   color: #032355;
+  padding: 0.3rem 0;
 }
-body main .main__input .step-one .main__input--wrapper .h1__description {
-  margin-top: -1rem;
+body main .main__input .step-one .main__input--wrapper .title__container .h1__description {
+  width: 100%;
   font-size: 1rem;
   color: #a5a4aa;
+  padding: 0.3rem 0;
 }
 body main .main__input .step-one .main__input--wrapper .input__description {
   color: #032355;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
   height: 4%;
+  margin-bottom: -1rem;
 }
-body main .main__input .step-one .main__input--wrapper .personal-info {
-  height: 8%;
+body main .main__input .step-one .main__input--wrapper .input__personal-info {
+  height: 10%;
   width: 100%;
-  margin-top: -1.2rem;
   border: solid 1px #a5a4aa;
   border-radius: 10px;
 }
-body main .main__input .step-one .main__input--wrapper .personal-info::-moz-placeholder {
+body main .main__input .step-one .main__input--wrapper .input__personal-info::-moz-placeholder {
   padding-left: 0.7rem;
 }
-body main .main__input .step-one .main__input--wrapper .personal-info::placeholder {
+body main .main__input .step-one .main__input--wrapper .input__personal-info::placeholder {
   padding-left: 0.7rem;
 }
-body main .main__input .step-one .main__input--wrapper .btn--container {
-  width: 100%;
+body main .main__input .step-one .btn--container {
+  width: 80%;
   height: 10%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
-body main .main__input .step-one .main__input--wrapper .btn--container #go-back {
-  width: 20%;
+body main .main__input .step-one .btn--container #go-back {
+  width: 30%;
   height: 100%;
   border: none;
   color: #a5a4aa;
 }
-body main .main__input .step-one .main__input--wrapper .btn--container #next-step {
-  width: 20%;
+body main .main__input .step-one .btn--container #next-step {
+  font-size: 1.1rem;
+  width: 30%;
   height: 100%;
   background-color: #032355;
   border-radius: 10px;
