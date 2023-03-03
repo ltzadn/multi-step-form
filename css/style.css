@@ -146,6 +146,12 @@ body main .main__input .step-one .main__input--wrapper .input__personal-info::-m
 body main .main__input .step-one .main__input--wrapper .input__personal-info::placeholder {
   padding-left: 0.7rem;
 }
+body main .main__input .step-one .main__input--wrapper .input__textfield--error {
+  border-color: #a00;
+}
+body main .main__input .step-one .main__input--wrapper .paragraph__textfield--error {
+  color: #a00;
+}
 body main .main__input .step-one .btn--container {
   width: 80%;
   height: 10%;

@@ -1,12 +1,13 @@
 import stepsJson from './mocks/steps.json' assert { type: 'json' };
-import isNotEmpty from './validation/isNotEmptyValidator.js' assert { type: 'js' };
+// import isAnEmail from './validation/isAnEmailValidator.js';
+// import isAPhoneNumber from './validation/isAPhoneNumberValidator.js';
 
 const sidebar = document.querySelector('.main__sidebar--container');
 const nextStepButton = document.querySelector('#next-step');
 const sidebarStepNumberIcons = sidebar.getElementsByClassName('sidebar__step__number');
-const nameTextField = document.getElementById('#name-textfield').value;
-const emailAdressTextField = document.getElementById('#email-textfield').value;
-const phoneTextField = document.getElementById('#phone-textfield').value;
+const formTextFields = document.getElementsByClassName('input__personal-info');
+// const emailAdressTextField = document.getElementById('#email-textfield');
+// const phoneTextField = document.getElementById('#phone-textfield');
 
 window.onload = () => {
 	stepsJson.data.map((step, index) => {
@@ -53,5 +54,19 @@ const sidebarStepsActiveStateHandler = event => {
 		sidebarStepNumberIcons[activeStep + 1].classList.remove('active');
 	}
 };
+// form fields length validation
+[...formTextFields].forEach(input => {
+	input.addEventListener('blur', event => {
+		event.target.value.length <= 0
+			? input.classList.add('input__textfield--error')
+			: input.classList.remove('input__textfield--error');
+	});
+});
+
+formTextFields[2].addEventListener('keydown', event => {
+	if (!event.key.match(/^[0-9/ -+\s]+$/)) {
+		event.preventDefault();
+	}
+});
 
 nextStepButton.addEventListener('click', sidebarStepsActiveStateHandler);

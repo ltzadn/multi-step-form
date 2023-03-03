@@ -139,7 +139,6 @@ body {
 							padding: 0.3rem 0;
 						}
 					}
-
 					.input__description {
 						color: $dark_blue;
 						font-size: 1rem;
@@ -155,6 +154,12 @@ body {
 					}
 					.input__personal-info::placeholder {
 						padding-left: 0.7rem;
+					}
+					.input__textfield--error {
+						border-color: #a00;
+					}
+					.paragraph__textfield--error {
+						color: #a00;
 					}
 				}
 				.btn--container {
