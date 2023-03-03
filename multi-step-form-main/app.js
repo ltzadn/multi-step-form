@@ -1,8 +1,12 @@
 import stepsJson from './mocks/steps.json' assert { type: 'json' };
+import isNotEmpty from './validation/isNotEmptyValidator.js' assert { type: 'js' };
 
 const sidebar = document.querySelector('.main__sidebar--container');
-const nextStepButton = document.querySelector('.next-step');
+const nextStepButton = document.querySelector('#next-step');
 const sidebarStepNumberIcons = sidebar.getElementsByClassName('sidebar__step__number');
+const nameTextField = document.getElementById('#name-textfield').value;
+const emailAdressTextField = document.getElementById('#email-textfield').value;
+const phoneTextField = document.getElementById('#phone-textfield').value;
 
 window.onload = () => {
 	stepsJson.data.map((step, index) => {
@@ -32,8 +36,6 @@ window.onload = () => {
 	});
 };
 let activeStep = 0;
-
-//
 
 const sidebarStepsActiveStateHandler = event => {
 	event.target.innerText === 'Next Step'
